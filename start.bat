@@ -10,7 +10,9 @@ REM --------------------------------------------------
 REM CONFIGURATION
 REM --------------------------------------------------
 
-set "PROJECT_DIR=D:\Units\OOP3\AT2\ai"
+for %%I in ("%~dp0.") do set "SUBMISSION_DIR=%%~fI"
+
+set "PROJECT_DIR=%SUBMISSION_DIR%"
 set "VENV_PYTHON=%PROJECT_DIR%\.venv\Scripts\python.exe"
 
 REM Android SDK ADB
